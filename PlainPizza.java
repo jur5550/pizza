@@ -1,8 +1,13 @@
 // a Concrete Component
 public class PlainPizza implements Pizza {
     String size;
+
+    PlainPizza(String size){
+       this.size = size;
+    }
+
     public String getDescription() {
-        
+
         return "Just a plain pizza";
     }
 

@@ -1,9 +1,10 @@
 // the Decorator
 abstract class ToppingDecorator implements Pizza {
     protected Pizza tempPizza;
+    String size;
     
     public ToppingDecorator(Pizza newPizza){
-
+        this.size = size;
         tempPizza = newPizza;
     }
     
