@@ -1,6 +1,8 @@
 // the Component
 public interface Pizza {
 
-    public String getDescription();
-    public double getCost();
+    String getDescription();
+    double getCost();
+    String getSize();
+    void setSize(String size);
 }
