@@ -14,22 +14,19 @@ public class TomatoSauce extends ToppingDecorator {
     
     public double getCost(){
         size = getSize();
+        double price;
         if(size == "S")
         {
-            System.out.println("Cost of plain pizza: " + 3.50);
-            return 3.50;
+            price = .35;
         } else if (size == "M")
         {
-            System.out.println("Cost of plain pizza: " + 4.00);
-            return 4.00;
+            price = .40;
         } else {
-            System.out.println("Cost of plain pizza: " + 4.50);
-            return 4.50;
+            price = .45;
         }
 
-
-//        System.out.println("Cost of sauce: " + .35);
-//        return tempPizza.getCost() + .35;
+        System.out.println("Cost of sauce: "+ price);
+        return tempPizza.getCost() + price;
     }
 
     @Override

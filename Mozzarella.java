@@ -13,9 +13,20 @@ public class Mozzarella extends ToppingDecorator {
     }
     
     public double getCost(){
-        
-        System.out.println("Cost of mozzarella: " + .50);
-        return tempPizza.getCost() + .50;
+        size = getSize();
+        double price;
+        if(size == "S")
+        {
+            price = .50;
+        } else if (size == "M")
+        {
+            price = .60;
+        } else {
+            price = .70;
+        }
+
+        System.out.println("Cost of mozzarella: " + price);
+        return tempPizza.getCost() + price;
     }
 
     @Override
